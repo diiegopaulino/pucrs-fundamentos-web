@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="page">
+        <nav>
+        <a href="#"><strong>Minimercado</strong> <span>PUCRS</span></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"></li>
+                <a href="#" class="dropbtn">Produtos</a>
+                <div class="dropdown-content">
+                    <a href="produtos1.html">Frutas e verduras</a>
+                    <a href="produtos2.html">Alimentos não-perecíveis</a>
+                    <a href="produtos3.html">Higiene e limpeza</a>
+                </div>
+            </li>
+            <li class="dropdown"></li>
+                <a href="#" class="dropbtn">Serviços</a>
+                <div class="dropdown-content">
+                    <a href="serviços.html">Entregas</a>
+                </div>
+            </li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulário de cadastro -->
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Cliente - Minimercado PUCRS</title>
+    </head>
+    <body>
+        <main>
+            <section>
+              <div class="signup-section">
+                <h1>Cadastre-se</h1>
+                <p>Preencha o formulário abaixo para criar sua conta.</p>
+              </div>
+              <form action="">
+                <label for="nomeCliente">Nome do Cliente:</label>
+                <input type="text" id="nomeCliente" name="nomeCliente" required />
+      
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required />
+      
+                <label for="telefone">Telefone:</label>
+                <input type="number" id="telefone" name="telefone" required />
+      
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+      
+                <div class="formaContato">
+                  <label for="formaContato">Melhor forma de contato:</label>
+                  <input type="radio" id="m-tel" name="formaContato" value="m-tel" />
+                  <label for="m-tel">Telefone</label>
+      
+                  <input type="radio" id="m-email" name="formaContato" value="m-email" />
+                  <label for="m-email">E-mail</label>
+                </div>
+                <br />
+      
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required />
+      
+                <label for="confirmarSenha">Confirmar Senha:</label>
+                <input type="password" id="confirmarSenha" name="confirmarSenha" required />
+                <br />
+                <button type="submit">Cadastrar</button>
+              </form>
+            </section>
+          </main>
+
+    <footer>
+        Projeto para a disciplina de Fundamentos de Sistemas Web - <span>PUCRS</span> | Feito com ♥ por <span>Diego Souza</span>
+    </footer>
+
+    <!-- inserir o script do arquivo index.js -->
+
+</body>
+
+</html>

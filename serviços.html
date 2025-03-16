@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Serviços</title>
+</head>
+<body>
+    <div class="page">
+        <nav>
+        <a href="#"><strong>Minimercado</strong> <span>PUCRS</span></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"></li>
+                <a href="#" class="dropbtn">Produtos</a>
+                <div class="dropdown-content">
+                    <a href="produtos1.html">Frutas e verduras</a>
+                    <a href="produtos2.html">Alimentos não-perecíveis</a>
+                    <a href="produtos3.html">Higiene e limpeza</a>
+                </div>
+            </li>
+            <li class="dropdown"></li>
+                <a href="#" class="dropbtn">Serviços</a>
+                <div class="dropdown-content">
+                    <a href="serviços.html">Entregas</a>
+                </div>
+            </li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulário de serviços -->
+    <main class="container">
+        <!-- Serviços -->
+        <section id="servicos">
+            <p>Escolha o tipo de serviço desejado e agende uma data e horário.</p>
+            <form id="formAgendamento">
+                <div>
+                    <label for="tipoServico">Tipo de Serviço</label>
+                    <select id="tipoServico" name="tipoServico">
+                        <option value="retirada" selected>Retirada no Local (Grátis)</option>
+                        <option value="teleEntrega">Tele-entrega (R$ 5,00 - até 10km)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="dataAgendamento">Data</label>
+                    <input type="date" id="dataAgendamento" name="dataAgendamento" required>
+                </div>
+                <div>
+                    <label for="horarioAgendamento">Horário</label>
+                    <input type="time" id="horarioAgendamento" name="horarioAgendamento" required>
+                </div>
+                <button type="submit">Agendar</button>
+            </form>
+            <div id="mensagemAgendamento" style="display: none;">
+                Serviço agendado com sucesso!
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Projeto para a disciplina de Fundamentos de Sistemas Web - <span>PUCRS</span> | Feito com ♥ por <span>Diego Souza</span>
+    </footer>
+
+    <!-- inserir o script do arquivo index.js -->
+
+</body>
+</html>
