@@ -1,69 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frutas e verduras</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frutas e Verduras - Minimercado PUCRS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style/style.css"/>
 </head>
-
 <body>
-    <div class="page">
-        <nav>
-        <a href="#"><strong>Minimercado</strong> <span>PUCRS</span></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown"></li>
-                <a href="#" class="dropbtn">Produtos</a>
-                <div class="dropdown-content">
-                    <a href="produtos1.html">Frutas e verduras</a>
-                    <a href="produtos2.html">Alimentos não-perecíveis</a>
-                    <a href="produtos3.html">Higiene e limpeza</a>
-                </div>
-            </li>
-            <li class="dropdown"></li>
-                <a href="#" class="dropbtn">Serviços</a>
-                <div class="dropdown-content">
-                    <a href="serviços.html">Entregas</a>
-                </div>
-            </li>
-            <li><a href="cadastro.html">Cadastro</a></li>
+  <!-- Navbar -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html">
+        <span class="minimercado">Minimercado</span><span class="pucrs">PUCRS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Produtos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="produtos1.html">Frutas e verduras</a></li>
+              <li><a class="dropdown-item" href="produtos2.html">Alimentos não-perecíveis</a></li>
+              <li><a class="dropdown-item" href="produtos3.html">Higiene e limpeza</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Serviços</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="servicos.html">Entregas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
         </ul>
-    </nav>
-    <main>
-        <section class="product-list">
-            <!-- Frutas e verduras item 1-->
-                <div class="product">
-                <img src="assets/img/produto1.webp" alt="Banana Prata 800g">
-                <h2>Banana Prata 800g</h2>
-                <p>Fonte de vitamina B6 e rica em potássio.</p>
-                <span>R$ 12,90/kg</span>
-                <div class="button-comprar">
-                    <button>Comprar</button>
-                </div>
-                </div>
-
-            <!-- Frutas e verduras - item 2 -->
-            <div class="product">
-                <img src="assets/img/produto2.webp" alt="Alface Crespa Naturalmente Fresca Qualitá">
-                <h2>Alface Crespa Naturalmente Fresca Qualitá</h2>
-                <p>Alface crespa. NÃO CONTÉM GLÚTEN.</p>
-                <span>R$ 6,99</span>
-                <div class="button-comprar">
-                    <button>Comprar</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-        <footer>
-            Projeto para a disciplina de Fundamentos de Sistemas Web - <span>PUCRS</span> | Feito com ♥ por <span>Diego Souza</span>
-        </footer>
-
-        <!-- inserir o script do arquivo index.js -->
+      </div>
     </div>
-    
-</body>
+  </nav>
 
+  <!-- Produtos -->
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Frutas e Verduras</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+      <!-- Produto 1 -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/img/produto1.webp" class="card-img-top" alt="Imagem de bananas prata frescas em embalagem de 800g">
+          <div class="card-body">
+            <h5 class="card-title">Banana Prata 800g</h5>
+            <p class="card-text">Fonte de vitamina B6 e rica em potássio.</p>
+            <p class="card-price">R$ 12,90/kg</p>
+            <a href="#" class="btn btn-success" aria-label="Comprar Banana Prata 800g">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/img/produto2.webp" class="card-img-top" alt="Alface crespa da marca Qualitá em embalagem fresca">
+          <div class="card-body">
+            <h5 class="card-title">Alface Crespa Naturalmente Fresca Qualitá</h5>
+            <p class="card-text">Alface crespa. NÃO CONTÉM GLÚTEN.</p>
+            <p class="card-price">R$ 6,99</p>
+            <a href="#" class="btn btn-success" aria-label="Comprar Alface Crespa Qualitá">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="py-4">
+    <div class="container text-center">
+      <p class="mb-4">
+        Projeto para a disciplina de Fundamentos de Sistemas Web - <span>PUCRS</span> <br>
+        Feito com ♥ por <span>Diego Souza</span>
+      </p>
+      <div class="d-flex justify-content-center gap-3">
+  
+        <!-- GitHub -->
+        <a href="https://github.com/diiegopaulino" target="_blank" class="text-decoration-none d-flex align-items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38
+              0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53
+              .63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95
+              0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.7 7.7 0 0 1 2-.27c.68 0
+              1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.27.82 2.15
+              0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01
+              8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          GitHub
+        </a>
+  
+        <!-- Instagram -->
+        <a href="https://instagram.com/" target="_blank" class="text-decoration-none d-flex align-items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.8 0 5.6 0 4.6.05c-.96.05-1.62.2-2.2.43a4.4 4.4 0 0 0-1.6 1.04 4.4 4.4 0 0 0-1.04
+              1.6c-.23.58-.38 1.24-.43 2.2C0 5.6 0 5.8 0 8s0 2.4.05 3.4c.05.96.2 1.62.43 2.2.23.58.54 1.1 1.04
+              1.6.5.5 1.02.8 1.6 1.04.58.23 1.24.38 2.2.43C5.6 16 5.8 16 8 16s2.4 0 3.4-.05c.96-.05 1.62-.2
+              2.2-.43a4.4 4.4 0 0 0 1.6-1.04 4.4 4.4 0 0 0 1.04-1.6c.23-.58.38-1.24.43-2.2C16 10.4 16 10.2
+              16 8s0-2.4-.05-3.4c-.05-.96-.2-1.62-.43-2.2a4.4 4.4 0 0 0-1.04-1.6 4.4 4.4 0 0 0-1.6-1.04c-.58-.23-1.24-.38-2.2-.43C10.4 0 10.2 0 8 0zM8 1.5c2.18 0 2.4 0 3.38.05.8.04 1.24.17
+              1.53.29.39.15.66.33.95.62.29.29.47.56.62.95.12.29.25.73.29 1.53.05.98.05 1.2.05 3.38s0 2.4-.05
+              3.38c-.04.8-.17 1.24-.29 1.53a2.9 2.9 0 0 1-.62.95 2.9 2.9 0 0 1-.95.62c-.29.12-.73.25-1.53.29-.98.05-1.2.05-3.38.05s-2.4
+              0-3.38-.05c-.8-.04-1.24-.17-1.53-.29a2.9 2.9 0 0 1-.95-.62 2.9 2.9 0 0 1-.62-.95c-.12-.29-.25-.73-.29-1.53C1.5 10.4 1.5
+              10.2 1.5 8s0-2.4.05-3.38c.04-.8.17-1.24.29-1.53.15-.39.33-.66.62-.95.29-.29.56-.47.95-.62.29-.12.73-.25 1.53-.29C5.6
+              1.5 5.82 1.5 8 1.5zM8 3.9a4.1 4.1 0 1 0 0 8.2 4.1 4.1 0 0 0 0-8.2zm0 6.7a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2zm4.5-6.8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>\n        </svg>
+          Instagram
+        </a>
+  
+        <!-- Email -->
+        <a href="mailto:diego.paulino@edu.pucrs.br" class="text-decoration-none d-flex align-items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217l-8 4.8-8-4.8V4zm0 1.383v6.634l5.803-3.482L0 5.383zm6.761 3.9L16 12.017V5.383l-6.761 3.9a.5.5 0 0 1-.478 0zM16 13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-.383l5.803-3.482L8 10.917l2.197-1.782L16 12.617V13z"/>
+          </svg>
+          E-mail
+        </a>
+  
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

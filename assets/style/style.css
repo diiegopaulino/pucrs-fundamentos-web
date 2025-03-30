@@ -1,0 +1,92 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+}
+
+main {
+  flex: 1;
+}
+
+.brand {
+  font-size: 2rem;
+  color: #51A644;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.brand:hover {
+  color: #51A644;
+  text-decoration: none;
+}
+
+.minimercado {
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.0;
+}
+
+.pucrs {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #7CF205;
+}
+
+footer {
+  background-color: #51A644;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+footer span {
+  color: #7CF205;
+  font-weight: bold;
+}
+
+footer a {
+  color: #fff;
+}
+
+.card-img-top {
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.card-price {
+  font-weight: bold;
+  color: #51A644;
+}
+
+/* Mostrar dropdown ao passar o mouse */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeSlide 0.3s ease-in-out forwards;
+}
+
+/* Animação de aparição suave do menu */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu {
+  margin-top: 0;
+  display: none;
+  opacity: 0;
+  transition: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+}
