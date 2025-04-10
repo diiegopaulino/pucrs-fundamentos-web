@@ -1,21 +1,40 @@
 # Projeto Minimercado PUCRS
 
-O Minimercado PUCRS consiste em uma plataforma web de um minimercado local, para facilitar o acesso aos clientes e agendar entregas de suas compras. Projeto desenvolvido para a disciplina de Fundamentos de Sistemas Web, do curso de graduação Análise e Desenvolvimentos de Sistemas da PUC-RS.
+O Projeto Minimercado PUCRS consiste em um sistema web desenvolvido para um minimercado local, com o objetivo de facilitar a visualização de produtos e serviços pelos clientes. A plataforma oferece uma navegação simples e acessível, promovendo praticidade no processo de compras e agendamento de entregas.
 
-## Funcionalidades
+Este projeto foi desenvolvido como parte da disciplina **Fundamentos de Sistemas Web**, do curso de **Análise e Desenvolvimento de Sistemas da PUCRS**.
 
-**Página inicial:** Página de boas-vindas com botão de cadastro e menu superior para as demais categorias.
+## 🎯 Objetivo
 
-**Menu Produtos:** links de acesso para as categorias de produtos: Frutas e verduras, Alimentos não-perecíveis e produtos de higiene e limpeza.
+Desenvolver uma aplicação web estática, utilizando HTML5, que atenda aos seguintes critérios:
 
-**Menu Serviços:** acesso para página de agendamento de entregas.
+- Exibir categorias de produtos com imagem, descrição e valor;
+- Permitir visualização de serviços com descrição e valor;
+- Facilitar o cadastro de clientes;
+- Garantir estrutura com cabeçalho, rodapé e acessibilidade básica.
 
-**Menu Cadastro:** Outra opção de acesso para cadastro do cliente na plataforma.
+## ✅ Funcionalidades
 
-Todas as imagens possuem descrições “alt” para suporte a leitores de tela e atenderem os requisitos de acessibilidade.
+- **Página inicial:** mensagem de boas-vindas, botão de cadastro e menu superior;
+- **Menu Produtos:** acesso às categorias:
+  - Frutas e verduras;
+  - Alimentos não-perecíveis;
+  - Higiene e limpeza.
+- **Menu Serviços:** página com agendamento de entrega ou retirada;
+- **Menu Cadastro:** formulário para cadastro de novos clientes;
+- **Acessibilidade:** todas as imagens possuem atributo `alt`.
 
-## Link para visualização
-https://diiegopaulino.github.io/pucrs-fundamentos-web/
+## 🔗 Link para visualização
 
-## Status do projeto
-Fase 1
+[Acesse o site via GitHub Pages](https://diiegopaulino.github.io/pucrs-fundamentos-web/)
+
+## 📁 Status do Projeto
+
+Fase 1 – Estrutura HTML completa e funcional. (concluído)  
+Fase 2 - CSS/Bootstrap e JavaScript. (concluído)
+
+## 👨‍💻 Desenvolvedor
+
+Diego Paulino de Souza  
+[GitHub](https://github.com/diiegopaulino)
+
